@@ -1,0 +1,447 @@
+{
+	"info": {
+		"_postman_id": "394d956b-d276-452a-84b3-8a22991491da",
+		"name": "check",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Book create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/book?book_name=demo_1&author=demo_1_authoer&cover_image=demo_1_cover_image",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"book"
+					],
+					"query": [
+						{
+							"key": "book_name",
+							"value": "demo_1"
+						},
+						{
+							"key": "author",
+							"value": "demo_1_authoer"
+						},
+						{
+							"key": "cover_image",
+							"value": "demo_1_cover_image"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/book",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/book/1?book_name=demo_1_update&author=demo_1_author&cover_image=demo_1_cover_image",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"book",
+						"1"
+					],
+					"query": [
+						{
+							"key": "book_name",
+							"value": "demo_1_update"
+						},
+						{
+							"key": "author",
+							"value": "demo_1_author"
+						},
+						{
+							"key": "cover_image",
+							"value": "demo_1_cover_image"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/book/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"book",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register?firstname=demo_user1&lastname=demo_user1&email=rehankhan@gmail.com&password=cher4443&gender=m&mobile=1234567898&city=Mumbai&age=45&password_confirmation=cher4443",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					],
+					"query": [
+						{
+							"key": "firstname",
+							"value": "demo_user1"
+						},
+						{
+							"key": "lastname",
+							"value": "demo_user1"
+						},
+						{
+							"key": "email",
+							"value": "rehankhan@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "cher4443"
+						},
+						{
+							"key": "gender",
+							"value": "m"
+						},
+						{
+							"key": "mobile",
+							"value": "1234567898"
+						},
+						{
+							"key": "city",
+							"value": "Mumbai"
+						},
+						{
+							"key": "age",
+							"value": "45"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "cher4443"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_register Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0Mzc4MTQwNCwiZXhwIjoxNjQzODY3ODA0LCJuYmYiOjE2NDM3ODE0MDQsImp0aSI6InRWNVYxYkxHSkVTTVNTcDkiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.5jx22QjoW8VTJ7O0FUjjv9Jt8gFWoR4szZ5SLTggDnA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register?firstname=demo_user1&lastname=demo_user1&email=rehankhan@gmail.com&password=cher4443&gender=m&mobile=1234567898&city=Mumbai&age=45&password_confirmation=cher4443",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					],
+					"query": [
+						{
+							"key": "firstname",
+							"value": "demo_user1"
+						},
+						{
+							"key": "lastname",
+							"value": "demo_user1"
+						},
+						{
+							"key": "email",
+							"value": "rehankhan@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "cher4443"
+						},
+						{
+							"key": "gender",
+							"value": "m"
+						},
+						{
+							"key": "mobile",
+							"value": "1234567898"
+						},
+						{
+							"key": "city",
+							"value": "Mumbai"
+						},
+						{
+							"key": "age",
+							"value": "45"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "cher4443"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login?name=rehan&email=rehankhan@gmail.com&password=cher4443",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "rehan"
+						},
+						{
+							"key": "email",
+							"value": "rehankhan@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "cher4443"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user profile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0Mzc4MDU0NywiZXhwIjoxNjQzODY2OTQ3LCJuYmYiOjE2NDM3ODA1NDcsImp0aSI6Ijg4d0xFaEFrNTZVendxR2siLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.TbnH6suIcsna6G2GGgRevUOMiX7unzNzyggG9ESd9pc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/profile",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTY0Mzc0ODE2NiwiZXhwIjoxNjQzODM0NTY2LCJuYmYiOjE2NDM3NDgxNjYsImp0aSI6Im9QcUlPd1NBSkp0MWptd3YiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.-Bx-wRGz84AuzyMKc8WQl25Vio5CZVqrZ30vj3yBRdk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/logout",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book Rent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/rentbook?b_id=1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"rentbook"
+					],
+					"query": [
+						{
+							"key": "b_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "returnbook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/returnbook?b_id=1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"returnbook"
+					],
+					"query": [
+						{
+							"key": "b_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User book list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/rentedbooks",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"rentedbooks"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
